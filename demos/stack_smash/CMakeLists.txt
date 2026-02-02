@@ -1,0 +1,2 @@
+add_executable(demo_stack_smash main.cpp)
+target_link_libraries(demo_stack_smash PRIVATE)

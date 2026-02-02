@@ -1,0 +1,35 @@
+{
+    "SIGSEGV": {
+        "0x0": {
+            "type": "skip_instruction",
+            "action": "replace_with_nop",
+            "description": "Null pointer dereference detected. Skipping instruction."
+        },
+        "default": {
+            "type": "bounds_check",
+            "action": "clamp_or_return",
+            "description": "Invalid memory access. Possible OOB."
+        }
+    },
+    "SIGFPE": {
+        "integer_divide_by_zero": {
+            "type": "div_zero_guard",
+            "action": "replace_operand_or_skip",
+            "description": "Division by zero. Injecting operand check."
+        }
+    },
+    "SIGILL": {
+        "default": {
+            "type": "skip_instruction",
+            "action": "nop_out",
+            "description": "Illegal instruction. skipping."
+        }
+    },
+    "TIMEOUT": {
+        "default": {
+            "type": "infinite_loop_break",
+            "action": "break_loop",
+            "description": "Loop timeout detected. Breaking loop."
+        }
+    }
+}

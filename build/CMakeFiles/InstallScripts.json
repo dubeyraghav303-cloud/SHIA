@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/raghavdubey/Desktop/SHCR/build/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/null_deref/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/divide_by_zero/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/out_of_bounds/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/use_after_free/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/infinite_loop/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/loop_null/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/readonly_write/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/bad_jump/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/stack_smash/cmake_install.cmake",
+		"/Users/raghavdubey/Desktop/SHCR/build/demos/threads/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

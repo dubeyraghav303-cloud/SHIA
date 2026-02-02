@@ -1,0 +1,2 @@
+add_executable(demo_readonly_write main.cpp)
+target_link_libraries(demo_readonly_write PRIVATE)
