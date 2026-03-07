@@ -22,6 +22,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  if (process.env.AUTH0_BASE_URL?.endsWith('/')) {
+    console.warn("⚠️ WARNING: AUTH0_BASE_URL ends with a trailing slash! This will cause Auth0 redirect loops in production.");
+  }
+
   return (
     <html lang="en">
       <body
