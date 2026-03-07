@@ -18,7 +18,7 @@ export default async function Home() {
             Access to the Self-Healing Infrastructure Agent telemetry is restricted. Please sign in to verify your identity.
           </p>
           <a
-            href="/api/auth/login"
+            href="/auth/login"
             className="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-4 rounded transition-colors"
           >
             Authenticate with Auth0

@@ -127,7 +127,7 @@ export default function DashboardClient({ user }: { user: any }) {
                     <div className="h-8 w-px bg-gray-800"></div>
                     <div className="flex items-center space-x-3">
                         <span className="text-sm text-gray-400">{user?.name || user?.email}</span>
-                        <a href="/api/auth/logout" className="text-gray-500 hover:text-gray-300 transition-colors">
+                        <a href="/auth/logout" className="text-gray-500 hover:text-gray-300 transition-colors">
                             <LogOut size={18} />
                         </a>
                     </div>
