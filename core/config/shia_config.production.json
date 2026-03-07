@@ -1,0 +1,27 @@
+{
+    "monitors": [
+        {
+            "log_file": "/var/log/syslog",
+            "rules": [
+                {
+                    "pattern": ".*Out of memory.*",
+                    "action": "FLUSH_CACHE",
+                    "service": "system"
+                },
+                {
+                    "pattern": ".*Connection refused.*",
+                    "action": "RESTART_SERVICE",
+                    "service": "nginx"
+                }
+            ]
+        }
+    ],
+    "circuit_breaker": {
+        "max_failures": 3,
+        "time_window_seconds": 600
+    },
+    "enable_ai_repair": true,
+    "supabase_url": "https://YOUR_PRODUCTION_SUPABASE_ID.supabase.co",
+    "supabase_key": "YOUR_PRODUCTION_SUPABASE_ANON_KEY",
+    "logging_level": "INFO"
+}

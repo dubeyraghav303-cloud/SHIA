@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/raghavdubey/Desktop/SHCR
+CMAKE_SOURCE_DIR = "/Users/raghavdubey/Desktop/SHCR pre"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/raghavdubey/Desktop/SHCR/build
+CMAKE_BINARY_DIR = "/Users/raghavdubey/Desktop/SHCR pre/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raghavdubey/Desktop/SHCR/build/CMakeFiles /Users/raghavdubey/Desktop/SHCR/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/raghavdubey/Desktop/SHCR pre/build/CMakeFiles" "/Users/raghavdubey/Desktop/SHCR pre/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raghavdubey/Desktop/SHCR/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/raghavdubey/Desktop/SHCR pre/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,256 +117,257 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named build_rust
+# Target rules for targets named shia_engine
 
 # Build rule for target.
-build_rust: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build_rust
-.PHONY : build_rust
+shia_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shia_engine
+.PHONY : shia_engine
 
 # fast build rule for target.
-build_rust/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_rust.dir/build.make CMakeFiles/build_rust.dir/build
-.PHONY : build_rust/fast
+shia_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/build
+.PHONY : shia_engine/fast
 
-#=============================================================================
-# Target rules for targets named shcr_runtime
-
-# Build rule for target.
-shcr_runtime: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shcr_runtime
-.PHONY : shcr_runtime
-
-# fast build rule for target.
-shcr_runtime/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/build
-.PHONY : shcr_runtime/fast
-
-#=============================================================================
-# Target rules for targets named demo_null_deref
-
-# Build rule for target.
-demo_null_deref: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_null_deref
-.PHONY : demo_null_deref
-
-# fast build rule for target.
-demo_null_deref/fast:
-	$(MAKE) $(MAKESILENT) -f demos/null_deref/CMakeFiles/demo_null_deref.dir/build.make demos/null_deref/CMakeFiles/demo_null_deref.dir/build
-.PHONY : demo_null_deref/fast
-
-#=============================================================================
-# Target rules for targets named demo_div_zero
-
-# Build rule for target.
-demo_div_zero: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_div_zero
-.PHONY : demo_div_zero
-
-# fast build rule for target.
-demo_div_zero/fast:
-	$(MAKE) $(MAKESILENT) -f demos/divide_by_zero/CMakeFiles/demo_div_zero.dir/build.make demos/divide_by_zero/CMakeFiles/demo_div_zero.dir/build
-.PHONY : demo_div_zero/fast
-
-#=============================================================================
-# Target rules for targets named demo_oob
-
-# Build rule for target.
-demo_oob: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_oob
-.PHONY : demo_oob
-
-# fast build rule for target.
-demo_oob/fast:
-	$(MAKE) $(MAKESILENT) -f demos/out_of_bounds/CMakeFiles/demo_oob.dir/build.make demos/out_of_bounds/CMakeFiles/demo_oob.dir/build
-.PHONY : demo_oob/fast
-
-#=============================================================================
-# Target rules for targets named demo_uaf
-
-# Build rule for target.
-demo_uaf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_uaf
-.PHONY : demo_uaf
-
-# fast build rule for target.
-demo_uaf/fast:
-	$(MAKE) $(MAKESILENT) -f demos/use_after_free/CMakeFiles/demo_uaf.dir/build.make demos/use_after_free/CMakeFiles/demo_uaf.dir/build
-.PHONY : demo_uaf/fast
-
-#=============================================================================
-# Target rules for targets named demo_infinite
-
-# Build rule for target.
-demo_infinite: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_infinite
-.PHONY : demo_infinite
-
-# fast build rule for target.
-demo_infinite/fast:
-	$(MAKE) $(MAKESILENT) -f demos/infinite_loop/CMakeFiles/demo_infinite.dir/build.make demos/infinite_loop/CMakeFiles/demo_infinite.dir/build
-.PHONY : demo_infinite/fast
-
-#=============================================================================
-# Target rules for targets named demo_loop_null
-
-# Build rule for target.
-demo_loop_null: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_loop_null
-.PHONY : demo_loop_null
-
-# fast build rule for target.
-demo_loop_null/fast:
-	$(MAKE) $(MAKESILENT) -f demos/loop_null/CMakeFiles/demo_loop_null.dir/build.make demos/loop_null/CMakeFiles/demo_loop_null.dir/build
-.PHONY : demo_loop_null/fast
-
-#=============================================================================
-# Target rules for targets named demo_readonly_write
-
-# Build rule for target.
-demo_readonly_write: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_readonly_write
-.PHONY : demo_readonly_write
-
-# fast build rule for target.
-demo_readonly_write/fast:
-	$(MAKE) $(MAKESILENT) -f demos/readonly_write/CMakeFiles/demo_readonly_write.dir/build.make demos/readonly_write/CMakeFiles/demo_readonly_write.dir/build
-.PHONY : demo_readonly_write/fast
-
-#=============================================================================
-# Target rules for targets named demo_bad_jump
-
-# Build rule for target.
-demo_bad_jump: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_bad_jump
-.PHONY : demo_bad_jump
-
-# fast build rule for target.
-demo_bad_jump/fast:
-	$(MAKE) $(MAKESILENT) -f demos/bad_jump/CMakeFiles/demo_bad_jump.dir/build.make demos/bad_jump/CMakeFiles/demo_bad_jump.dir/build
-.PHONY : demo_bad_jump/fast
-
-#=============================================================================
-# Target rules for targets named demo_stack_smash
-
-# Build rule for target.
-demo_stack_smash: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_stack_smash
-.PHONY : demo_stack_smash
-
-# fast build rule for target.
-demo_stack_smash/fast:
-	$(MAKE) $(MAKESILENT) -f demos/stack_smash/CMakeFiles/demo_stack_smash.dir/build.make demos/stack_smash/CMakeFiles/demo_stack_smash.dir/build
-.PHONY : demo_stack_smash/fast
-
-#=============================================================================
-# Target rules for targets named demo_threads
-
-# Build rule for target.
-demo_threads: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_threads
-.PHONY : demo_threads
-
-# fast build rule for target.
-demo_threads/fast:
-	$(MAKE) $(MAKESILENT) -f demos/threads/CMakeFiles/demo_threads.dir/build.make demos/threads/CMakeFiles/demo_threads.dir/build
-.PHONY : demo_threads/fast
-
-core/analyzer/context_analyzer.o: core/analyzer/context_analyzer.cpp.o
-.PHONY : core/analyzer/context_analyzer.o
+core/ai_bridge.o: core/ai_bridge.cpp.o
+.PHONY : core/ai_bridge.o
 
 # target to build an object file
-core/analyzer/context_analyzer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/analyzer/context_analyzer.cpp.o
-.PHONY : core/analyzer/context_analyzer.cpp.o
+core/ai_bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/ai_bridge.cpp.o
+.PHONY : core/ai_bridge.cpp.o
 
-core/analyzer/context_analyzer.i: core/analyzer/context_analyzer.cpp.i
-.PHONY : core/analyzer/context_analyzer.i
+core/ai_bridge.i: core/ai_bridge.cpp.i
+.PHONY : core/ai_bridge.i
 
 # target to preprocess a source file
-core/analyzer/context_analyzer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/analyzer/context_analyzer.cpp.i
-.PHONY : core/analyzer/context_analyzer.cpp.i
+core/ai_bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/ai_bridge.cpp.i
+.PHONY : core/ai_bridge.cpp.i
 
-core/analyzer/context_analyzer.s: core/analyzer/context_analyzer.cpp.s
-.PHONY : core/analyzer/context_analyzer.s
+core/ai_bridge.s: core/ai_bridge.cpp.s
+.PHONY : core/ai_bridge.s
 
 # target to generate assembly for a file
-core/analyzer/context_analyzer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/analyzer/context_analyzer.cpp.s
-.PHONY : core/analyzer/context_analyzer.cpp.s
+core/ai_bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/ai_bridge.cpp.s
+.PHONY : core/ai_bridge.cpp.s
 
-core/interceptor/mach_exceptions.o: core/interceptor/mach_exceptions.cpp.o
-.PHONY : core/interceptor/mach_exceptions.o
+core/blockchain_bridge.o: core/blockchain_bridge.cpp.o
+.PHONY : core/blockchain_bridge.o
 
 # target to build an object file
-core/interceptor/mach_exceptions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/mach_exceptions.cpp.o
-.PHONY : core/interceptor/mach_exceptions.cpp.o
+core/blockchain_bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/blockchain_bridge.cpp.o
+.PHONY : core/blockchain_bridge.cpp.o
 
-core/interceptor/mach_exceptions.i: core/interceptor/mach_exceptions.cpp.i
-.PHONY : core/interceptor/mach_exceptions.i
+core/blockchain_bridge.i: core/blockchain_bridge.cpp.i
+.PHONY : core/blockchain_bridge.i
 
 # target to preprocess a source file
-core/interceptor/mach_exceptions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/mach_exceptions.cpp.i
-.PHONY : core/interceptor/mach_exceptions.cpp.i
+core/blockchain_bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/blockchain_bridge.cpp.i
+.PHONY : core/blockchain_bridge.cpp.i
 
-core/interceptor/mach_exceptions.s: core/interceptor/mach_exceptions.cpp.s
-.PHONY : core/interceptor/mach_exceptions.s
+core/blockchain_bridge.s: core/blockchain_bridge.cpp.s
+.PHONY : core/blockchain_bridge.s
 
 # target to generate assembly for a file
-core/interceptor/mach_exceptions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/mach_exceptions.cpp.s
-.PHONY : core/interceptor/mach_exceptions.cpp.s
+core/blockchain_bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/blockchain_bridge.cpp.s
+.PHONY : core/blockchain_bridge.cpp.s
 
-core/interceptor/signal_handler.o: core/interceptor/signal_handler.cpp.o
-.PHONY : core/interceptor/signal_handler.o
+core/circuit_breaker/circuit_breaker.o: core/circuit_breaker/circuit_breaker.cpp.o
+.PHONY : core/circuit_breaker/circuit_breaker.o
 
 # target to build an object file
-core/interceptor/signal_handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/signal_handler.cpp.o
-.PHONY : core/interceptor/signal_handler.cpp.o
+core/circuit_breaker/circuit_breaker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/circuit_breaker/circuit_breaker.cpp.o
+.PHONY : core/circuit_breaker/circuit_breaker.cpp.o
 
-core/interceptor/signal_handler.i: core/interceptor/signal_handler.cpp.i
-.PHONY : core/interceptor/signal_handler.i
+core/circuit_breaker/circuit_breaker.i: core/circuit_breaker/circuit_breaker.cpp.i
+.PHONY : core/circuit_breaker/circuit_breaker.i
 
 # target to preprocess a source file
-core/interceptor/signal_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/signal_handler.cpp.i
-.PHONY : core/interceptor/signal_handler.cpp.i
+core/circuit_breaker/circuit_breaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/circuit_breaker/circuit_breaker.cpp.i
+.PHONY : core/circuit_breaker/circuit_breaker.cpp.i
 
-core/interceptor/signal_handler.s: core/interceptor/signal_handler.cpp.s
-.PHONY : core/interceptor/signal_handler.s
+core/circuit_breaker/circuit_breaker.s: core/circuit_breaker/circuit_breaker.cpp.s
+.PHONY : core/circuit_breaker/circuit_breaker.s
 
 # target to generate assembly for a file
-core/interceptor/signal_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/interceptor/signal_handler.cpp.s
-.PHONY : core/interceptor/signal_handler.cpp.s
+core/circuit_breaker/circuit_breaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/circuit_breaker/circuit_breaker.cpp.s
+.PHONY : core/circuit_breaker/circuit_breaker.cpp.s
 
-core/transformer/patch_apply.o: core/transformer/patch_apply.cpp.o
-.PHONY : core/transformer/patch_apply.o
+core/detector/log_tailer.o: core/detector/log_tailer.cpp.o
+.PHONY : core/detector/log_tailer.o
 
 # target to build an object file
-core/transformer/patch_apply.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/transformer/patch_apply.cpp.o
-.PHONY : core/transformer/patch_apply.cpp.o
+core/detector/log_tailer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/log_tailer.cpp.o
+.PHONY : core/detector/log_tailer.cpp.o
 
-core/transformer/patch_apply.i: core/transformer/patch_apply.cpp.i
-.PHONY : core/transformer/patch_apply.i
+core/detector/log_tailer.i: core/detector/log_tailer.cpp.i
+.PHONY : core/detector/log_tailer.i
 
 # target to preprocess a source file
-core/transformer/patch_apply.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/transformer/patch_apply.cpp.i
-.PHONY : core/transformer/patch_apply.cpp.i
+core/detector/log_tailer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/log_tailer.cpp.i
+.PHONY : core/detector/log_tailer.cpp.i
 
-core/transformer/patch_apply.s: core/transformer/patch_apply.cpp.s
-.PHONY : core/transformer/patch_apply.s
+core/detector/log_tailer.s: core/detector/log_tailer.cpp.s
+.PHONY : core/detector/log_tailer.s
 
 # target to generate assembly for a file
-core/transformer/patch_apply.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shcr_runtime.dir/build.make CMakeFiles/shcr_runtime.dir/core/transformer/patch_apply.cpp.s
-.PHONY : core/transformer/patch_apply.cpp.s
+core/detector/log_tailer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/log_tailer.cpp.s
+.PHONY : core/detector/log_tailer.cpp.s
+
+core/detector/worker_pool.o: core/detector/worker_pool.cpp.o
+.PHONY : core/detector/worker_pool.o
+
+# target to build an object file
+core/detector/worker_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/worker_pool.cpp.o
+.PHONY : core/detector/worker_pool.cpp.o
+
+core/detector/worker_pool.i: core/detector/worker_pool.cpp.i
+.PHONY : core/detector/worker_pool.i
+
+# target to preprocess a source file
+core/detector/worker_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/worker_pool.cpp.i
+.PHONY : core/detector/worker_pool.cpp.i
+
+core/detector/worker_pool.s: core/detector/worker_pool.cpp.s
+.PHONY : core/detector/worker_pool.s
+
+# target to generate assembly for a file
+core/detector/worker_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/detector/worker_pool.cpp.s
+.PHONY : core/detector/worker_pool.cpp.s
+
+core/diagnoser/diagnostic_engine.o: core/diagnoser/diagnostic_engine.cpp.o
+.PHONY : core/diagnoser/diagnostic_engine.o
+
+# target to build an object file
+core/diagnoser/diagnostic_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/diagnoser/diagnostic_engine.cpp.o
+.PHONY : core/diagnoser/diagnostic_engine.cpp.o
+
+core/diagnoser/diagnostic_engine.i: core/diagnoser/diagnostic_engine.cpp.i
+.PHONY : core/diagnoser/diagnostic_engine.i
+
+# target to preprocess a source file
+core/diagnoser/diagnostic_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/diagnoser/diagnostic_engine.cpp.i
+.PHONY : core/diagnoser/diagnostic_engine.cpp.i
+
+core/diagnoser/diagnostic_engine.s: core/diagnoser/diagnostic_engine.cpp.s
+.PHONY : core/diagnoser/diagnostic_engine.s
+
+# target to generate assembly for a file
+core/diagnoser/diagnostic_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/diagnoser/diagnostic_engine.cpp.s
+.PHONY : core/diagnoser/diagnostic_engine.cpp.s
+
+core/integrity_manager.o: core/integrity_manager.cpp.o
+.PHONY : core/integrity_manager.o
+
+# target to build an object file
+core/integrity_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/integrity_manager.cpp.o
+.PHONY : core/integrity_manager.cpp.o
+
+core/integrity_manager.i: core/integrity_manager.cpp.i
+.PHONY : core/integrity_manager.i
+
+# target to preprocess a source file
+core/integrity_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/integrity_manager.cpp.i
+.PHONY : core/integrity_manager.cpp.i
+
+core/integrity_manager.s: core/integrity_manager.cpp.s
+.PHONY : core/integrity_manager.s
+
+# target to generate assembly for a file
+core/integrity_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/integrity_manager.cpp.s
+.PHONY : core/integrity_manager.cpp.s
+
+core/recoverer/recovery_controller.o: core/recoverer/recovery_controller.cpp.o
+.PHONY : core/recoverer/recovery_controller.o
+
+# target to build an object file
+core/recoverer/recovery_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/recoverer/recovery_controller.cpp.o
+.PHONY : core/recoverer/recovery_controller.cpp.o
+
+core/recoverer/recovery_controller.i: core/recoverer/recovery_controller.cpp.i
+.PHONY : core/recoverer/recovery_controller.i
+
+# target to preprocess a source file
+core/recoverer/recovery_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/recoverer/recovery_controller.cpp.i
+.PHONY : core/recoverer/recovery_controller.cpp.i
+
+core/recoverer/recovery_controller.s: core/recoverer/recovery_controller.cpp.s
+.PHONY : core/recoverer/recovery_controller.s
+
+# target to generate assembly for a file
+core/recoverer/recovery_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/recoverer/recovery_controller.cpp.s
+.PHONY : core/recoverer/recovery_controller.cpp.s
+
+core/shia_engine.o: core/shia_engine.cpp.o
+.PHONY : core/shia_engine.o
+
+# target to build an object file
+core/shia_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/shia_engine.cpp.o
+.PHONY : core/shia_engine.cpp.o
+
+core/shia_engine.i: core/shia_engine.cpp.i
+.PHONY : core/shia_engine.i
+
+# target to preprocess a source file
+core/shia_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/shia_engine.cpp.i
+.PHONY : core/shia_engine.cpp.i
+
+core/shia_engine.s: core/shia_engine.cpp.s
+.PHONY : core/shia_engine.s
+
+# target to generate assembly for a file
+core/shia_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/shia_engine.cpp.s
+.PHONY : core/shia_engine.cpp.s
+
+core/telemetry_bridge.o: core/telemetry_bridge.cpp.o
+.PHONY : core/telemetry_bridge.o
+
+# target to build an object file
+core/telemetry_bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/telemetry_bridge.cpp.o
+.PHONY : core/telemetry_bridge.cpp.o
+
+core/telemetry_bridge.i: core/telemetry_bridge.cpp.i
+.PHONY : core/telemetry_bridge.i
+
+# target to preprocess a source file
+core/telemetry_bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/telemetry_bridge.cpp.i
+.PHONY : core/telemetry_bridge.cpp.i
+
+core/telemetry_bridge.s: core/telemetry_bridge.cpp.s
+.PHONY : core/telemetry_bridge.s
+
+# target to generate assembly for a file
+core/telemetry_bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shia_engine.dir/build.make CMakeFiles/shia_engine.dir/core/telemetry_bridge.cpp.s
+.PHONY : core/telemetry_bridge.cpp.s
 
 # Help Target
 help:
@@ -376,30 +377,37 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... build_rust"
-	@echo "... demo_bad_jump"
-	@echo "... demo_div_zero"
-	@echo "... demo_infinite"
-	@echo "... demo_loop_null"
-	@echo "... demo_null_deref"
-	@echo "... demo_oob"
-	@echo "... demo_readonly_write"
-	@echo "... demo_stack_smash"
-	@echo "... demo_threads"
-	@echo "... demo_uaf"
-	@echo "... shcr_runtime"
-	@echo "... core/analyzer/context_analyzer.o"
-	@echo "... core/analyzer/context_analyzer.i"
-	@echo "... core/analyzer/context_analyzer.s"
-	@echo "... core/interceptor/mach_exceptions.o"
-	@echo "... core/interceptor/mach_exceptions.i"
-	@echo "... core/interceptor/mach_exceptions.s"
-	@echo "... core/interceptor/signal_handler.o"
-	@echo "... core/interceptor/signal_handler.i"
-	@echo "... core/interceptor/signal_handler.s"
-	@echo "... core/transformer/patch_apply.o"
-	@echo "... core/transformer/patch_apply.i"
-	@echo "... core/transformer/patch_apply.s"
+	@echo "... shia_engine"
+	@echo "... core/ai_bridge.o"
+	@echo "... core/ai_bridge.i"
+	@echo "... core/ai_bridge.s"
+	@echo "... core/blockchain_bridge.o"
+	@echo "... core/blockchain_bridge.i"
+	@echo "... core/blockchain_bridge.s"
+	@echo "... core/circuit_breaker/circuit_breaker.o"
+	@echo "... core/circuit_breaker/circuit_breaker.i"
+	@echo "... core/circuit_breaker/circuit_breaker.s"
+	@echo "... core/detector/log_tailer.o"
+	@echo "... core/detector/log_tailer.i"
+	@echo "... core/detector/log_tailer.s"
+	@echo "... core/detector/worker_pool.o"
+	@echo "... core/detector/worker_pool.i"
+	@echo "... core/detector/worker_pool.s"
+	@echo "... core/diagnoser/diagnostic_engine.o"
+	@echo "... core/diagnoser/diagnostic_engine.i"
+	@echo "... core/diagnoser/diagnostic_engine.s"
+	@echo "... core/integrity_manager.o"
+	@echo "... core/integrity_manager.i"
+	@echo "... core/integrity_manager.s"
+	@echo "... core/recoverer/recovery_controller.o"
+	@echo "... core/recoverer/recovery_controller.i"
+	@echo "... core/recoverer/recovery_controller.s"
+	@echo "... core/shia_engine.o"
+	@echo "... core/shia_engine.i"
+	@echo "... core/shia_engine.s"
+	@echo "... core/telemetry_bridge.o"
+	@echo "... core/telemetry_bridge.i"
+	@echo "... core/telemetry_bridge.s"
 .PHONY : help
 
 

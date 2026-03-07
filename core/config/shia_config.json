@@ -1,0 +1,41 @@
+{
+  "monitors": [
+    {
+      "log_file": "/var/log/syslog",
+      "rules": [
+        {
+          "pattern": ".*Out of memory.*",
+          "action": "FLUSH_CACHE",
+          "service": "system"
+        },
+        {
+          "pattern": ".*Connection refused.*",
+          "action": "RESTART_SERVICE",
+          "service": "nginx"
+        }
+      ]
+    },
+    {
+      "log_file": "/tmp/test_syslog.log",
+      "rules": [
+        {
+          "pattern": ".*Segmentation Fault.*",
+          "action": "RESTART_SERVICE",
+          "service": "dummy_service"
+        },
+        {
+          "pattern": ".*Out of Memory.*",
+          "action": "FLUSH_CACHE",
+          "service": "dummy_service"
+        }
+      ]
+    }
+  ],
+  "circuit_breaker": {
+    "max_failures": 3,
+    "time_window_seconds": 600
+  },
+  "enable_ai_repair": true,
+  "supabase_url": "https://ovvakkbdemwixlbwfsgb.supabase.co",
+  "supabase_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92dmFra2JkZW13aXhsYndmc2diIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI4Njk1NTEsImV4cCI6MjA4ODQ0NTU1MX0.lijN03H-9zYFxNA9xiwlNc_5SQxOo0WcvTnm9R7xNBI"
+}

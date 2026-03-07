@@ -1,0 +1,11 @@
+.DS_Store
+build/
+bin/
+app/
+engine.log
+*.log
+dashboard/node_modules/
+dashboard/.next/
+dashboard/.env.local
+.dmg_staging/
+SHCR_Installer.dmg
