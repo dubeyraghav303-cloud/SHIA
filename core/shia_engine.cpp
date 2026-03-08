@@ -146,7 +146,7 @@ int main(int argc, char* argv[]) {
     });
 
     // Load Configuration
-    std::string config_path = "core/config/shia_config.json"; // Default or read from args
+    std::string config_path = argc > 1 ? argv[1] : "shia_config.json";
     LoadConfig(config_path, tailer, cb, enable_ai_repair);
 
     // Start Monitoring

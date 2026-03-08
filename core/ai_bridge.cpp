@@ -5,7 +5,7 @@
 #include <curl/curl.h>
 
 const std::string GEMINI_API_KEY = "AIzaSyDZ9tn2wM1n1graMCcLhDEdUMEhYDoKgWM";
-const std::string GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=" + GEMINI_API_KEY;
+const std::string GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
 
 // libcurl write callback
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* userp) {

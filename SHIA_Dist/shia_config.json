@@ -27,6 +27,11 @@
           "pattern": ".*Out of Memory.*",
           "action": "FLUSH_CACHE",
           "service": "dummy_service"
+        },
+        {
+          "pattern": ".*Unknown memory leak.*",
+          "action": "FORCE_AI_REPAIR",
+          "service": "ai_demo_service"
         }
       ]
     }
